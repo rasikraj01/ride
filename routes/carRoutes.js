@@ -37,13 +37,11 @@ router.get('/near', async (req, res) => {
                         type : "Point",
                         coordinates : [req.query.longitude, req.query.latitude]
                     },
-                    $minDistance: 1000,
                     $maxDistance: 5000
                 }
                 },
                 isAvailable : true
             }
-            // {_id : 0, currentLocation : {_id : 0, type: 0}}
         )
         
         if (nearByCars.length === 0 ) {

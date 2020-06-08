@@ -15,7 +15,7 @@ const carSchema = new mongoose.Schema({
     isAvailable : {
         type : Boolean,
         required : true,
-        default : false
+        default : true
     },
     currentLocation: {
         type : pointSchema,

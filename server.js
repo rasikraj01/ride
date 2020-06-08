@@ -6,6 +6,7 @@ require('dotenv').config();
 
 const carRoutes = require('./routes/carRoutes');
 const passengerRoutes = require('./routes/passengerRoutes');
+const bookingRoutes = require('./routes/bookingRoutes');
 
 
 const app = express();
@@ -24,6 +25,7 @@ app.use(express.json());
 
 app.use('/api/car/', carRoutes);
 app.use('/api/passenger/', passengerRoutes);
+app.use('/api/booking/', bookingRoutes);
 
 
 
